@@ -65,6 +65,12 @@ This website is fully responsive:
 ### 📱 Mobile View
 ![Mobile](./screenshots/mobile.jpeg)
 
+## 🎥 Demo Video
+
+Click below to watch the project demo:
+
+👉 [View Portfolio Demo](https://go.screenpal.com/watch/cO1n6hnu14t)
+
 ## ⚙️ Installation & Setup
 
 Clone the repository:
