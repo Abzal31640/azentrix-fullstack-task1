@@ -48,18 +48,22 @@ This website is fully responsive:
 ## 📸 Screenshots
 
 ### 🏠 Home Section
-![Home](./screenshots/home.png)
+![Home](./screenshots/home.jpeg)
 
 ### 🧑 About Section
-![About](./screenshots/about.png)
+![About](./screenshots/about.jpeg)
+
+### 🛠️ Skills Section
+![Skills](./screenshots/skill.jpeg)
 
 ### 📂 Projects Section
-![Projects](./screenshots/projects.png)
+![Projects](./screenshots/project.jpeg)
+
+### 📞 Contact Section
+![Contact](./screenshots/contact.jpeg)
 
 ### 📱 Mobile View
-![Mobile](./screenshots/mobile.png)
-
----
+![Mobile](./screenshots/mobile.jpeg)
 
 ## ⚙️ Installation & Setup
 
