@@ -1,44 +1,68 @@
-# 🎨 Animated Portfolio Website
+# 🎨 Animated Portfolio Website – Task 1
 
-## 📌 About the Project
-This is a fully responsive and animated portfolio website built for a fictional creative professional. It focuses on smooth UI, modern design, and user experience.
+## 📌 Overview
+This is a fully responsive and animated portfolio website built for a fictional creative professional. The goal of this project is to demonstrate modern UI/UX design, smooth animations, and responsive web development skills.
 
 ---
 
 ## 🚀 Tech Stack
 - React + Vite
-- HTML, CSS, JavaScript
-- Framer Motion / GSAP (Animations)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Framer Motion / GSAP (for animations)
 
 ---
 
 ## ✨ Features
-- Hero, About, Skills, Projects, Contact sections
-- Smooth scrolling navigation
-- Modern animations and transitions
-- Fully responsive (Mobile, Tablet, Desktop)
-- Contact form with validation
+
+✔ Modern animated UI  
+✔ Hero, About, Skills, Projects, Contact sections  
+✔ Smooth scrolling navigation  
+✔ Responsive design (Mobile / Tablet / Desktop)  
+✔ Interactive hover effects  
+✔ Contact form with validation  
+✔ Clean and minimal design  
 
 ---
 
 ## 📱 Responsive Design
-- Mobile friendly layout
-- Tablet optimized UI
-- Desktop full experience
+
+This website is fully responsive:
+
+- 📱 Mobile: Optimized layout with stacked sections  
+- 📟 Tablet: Balanced grid layout  
+- 💻 Desktop: Full-width modern layout  
+
+---
+
+## 🎬 Animations Used
+
+- Fade-in on scroll  
+- Slide-up transitions  
+- Hover scaling effects  
+- Smooth page transitions  
 
 ---
 
 ## 📸 Screenshots
-(Add your screenshots here)
+
+### 🏠 Home Section
+![Home](./screenshots/home.png)
+
+### 🧑 About Section
+![About](./screenshots/about.png)
+
+### 📂 Projects Section
+![Projects](./screenshots/projects.png)
+
+### 📱 Mobile View
+![Mobile](./screenshots/mobile.png)
 
 ---
 
-## 🎥 Demo Video
-(Loom link here)
+## ⚙️ Installation & Setup
 
----
-
-## ⚙️ Setup Instructions
+Clone the repository:
 ```bash
-npm install
-npm run dev
+git clone https://github.com/Abzal31640/azentrix-fullstack-task1.git
