@@ -7,19 +7,28 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import Socials from "./components/Socials";
+
 function App() {
   return (
-    <>
+    <main className="overflow-x-hidden">
       <ScrollProgress />
-      <Socials />
+
       <Navbar />
+
+      <Socials />
+
       <Hero />
+
       <About />
+
       <Skills />
+
       <Projects />
+
       <Contact />
+
       <Footer />
-    </>
+    </main>
   );
 }
 

@@ -1,7 +1,9 @@
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-center text-slate-400 py-6">
-      <p>© 2026 Nova Reed. Built with React & Framer Motion.</p>
+    <footer className="py-6 text-center border-t border-slate-800">
+      <p className="text-slate-400 text-sm">
+        © 2026 John Smith. All Rights Reserved.
+      </p>
     </footer>
   );
 }

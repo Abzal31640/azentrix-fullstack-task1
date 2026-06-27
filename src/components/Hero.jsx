@@ -5,54 +5,107 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-transparent flex flex-col justify-center items-center text-center px-4 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden"
     >
-      {/* Glow Effects */}
-      <div className="absolute w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+      {/* Background Glow Effects */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
 
-      <div className="absolute top-20 right-20 w-60 h-60 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute top-32 right-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
 
       {/* Hero Content */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="z-10"
+        className="relative z-10 max-w-4xl"
       >
+        {/* Small Tag */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="inline-block mb-6 px-4 py-2 border border-cyan-400/30 rounded-full bg-cyan-500/10 text-cyan-300 text-sm"
+        >
+          🚀 Frontend Developer & UI Engineer
+        </motion.div>
+
+        {/* Animated Name */}
         <TypeAnimation
           sequence={[
-            "NOVA REED",
+            "JOHN SMITH",
             2000,
-            "Creative Developer",
+            "Frontend Developer",
             2000,
-            "Motion Designer",
+            "React Developer",
+            2000,
+            "UI Engineer",
             2000,
           ]}
           wrapper="h1"
           speed={50}
           repeat={Infinity}
-          className="text-5xl md:text-8xl font-bold text-cyan-400"
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-cyan-400 leading-tight"
         />
 
+        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="text-xl text-slate-300 mt-6"
+          className="text-lg md:text-xl text-slate-300 mt-8 max-w-2xl mx-auto leading-relaxed"
         >
-          Building immersive digital experiences with creativity and code.
+          Crafting modern, responsive and engaging web experiences with
+          React, JavaScript and creative UI design. Passionate about building
+          seamless digital experiences that users love.
         </motion.p>
 
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-            boxShadow: "0 0 30px rgba(34,211,238,0.7)",
-          }}
-          whileTap={{ scale: 0.9 }}
-          className="mt-8 px-8 py-3 bg-cyan-500 text-white rounded-xl font-semibold"
+        {/* Buttons */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-10"
         >
-          Explore Universe 🚀
-        </motion.button>
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 0 30px rgba(34,211,238,0.7)",
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 bg-cyan-500 text-white rounded-xl font-semibold"
+          >
+            Explore Universe 🚀
+          </motion.button>
+
+          <motion.a
+            href="/resume.pdf"
+            whileHover={{
+              scale: 1.05,
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 border border-cyan-400 text-cyan-400 rounded-xl font-semibold hover:bg-cyan-500/10 transition"
+          >
+            Download Resume
+          </motion.a>
+        </motion.div>
+      </motion.div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        animate={{ y: [0, 12, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 1.8,
+        }}
+        className="absolute bottom-10 flex flex-col items-center text-slate-400"
+      >
+        <span className="text-sm mb-2">Scroll Down</span>
+
+        <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-cyan-400 rounded-full mt-2"></div>
+        </div>
       </motion.div>
     </section>
   );
