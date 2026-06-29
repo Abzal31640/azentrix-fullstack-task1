@@ -251,11 +251,14 @@ npm run preview
 
 ## 📸 Screenshots
 
-### 🏠 Hero/Home Section
-![Home](./screenshots/Home.jpeg)
+### 🏠 Home Section
+![Home](./screenshots/home.jpeg)
 
 ### 👤 About Section
-![About](./screenshots/About.jpeg)
+![About](./screenshots/about.jpeg)
+
+### 🛤️ Journey Section
+![Journey](./screenshots/journey.jpeg)
 
 ### ⚡ Skills Section
 ![Skills](./screenshots/skills.jpeg)
@@ -268,9 +271,6 @@ npm run preview
 
 ### 📱 Mobile View
 ![Mobile](./screenshots/mobile.jpeg)
-
-### 🛤️ Journey Section
-![Journey](./screenshots/journey.jpeg)
 
 
 ## 💡 Development Approach
