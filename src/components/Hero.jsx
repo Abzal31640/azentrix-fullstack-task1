@@ -61,12 +61,12 @@ function Hero() {
           seamless digital experiences that users love.
         </motion.p>
 
-        {/* Buttons */}
+        {/* Center Button */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mt-10"
+          className="flex justify-center mt-10"
         >
           <motion.button
             whileHover={{
@@ -74,21 +74,25 @@ function Hero() {
               boxShadow: "0 0 30px rgba(34,211,238,0.7)",
             }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-cyan-500 text-white rounded-xl font-semibold"
+            onClick={() =>
+              document.getElementById("about")?.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
+            className="
+              px-10
+              py-4
+              bg-cyan-500
+              text-white
+              rounded-xl
+              font-semibold
+              text-lg
+              shadow-lg
+              shadow-cyan-500/30
+            "
           >
             Explore Universe 🚀
           </motion.button>
-
-          <motion.a
-            href="/resume.pdf"
-            whileHover={{
-              scale: 1.05,
-            }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 border border-cyan-400 text-cyan-400 rounded-xl font-semibold hover:bg-cyan-500/10 transition"
-          >
-            Download Resume
-          </motion.a>
         </motion.div>
       </motion.div>
 

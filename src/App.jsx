@@ -6,16 +6,18 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
-import Socials from "./components/Socials";
 
+import CursorGlow from "./components/CursorGlow";
 function App() {
   return (
     <main className="overflow-x-hidden">
+      <CursorGlow />
+
       <ScrollProgress />
 
       <Navbar />
 
-      <Socials />
+      
 
       <Hero />
 
