@@ -302,7 +302,7 @@ The website is optimized for:
 
 Loom Video:
 
-LOOM_VIDEO_LINK_HERE
+https://www.loom.com/share/80a44a0746af4acbb87413535105ada7
 
 ---
 
